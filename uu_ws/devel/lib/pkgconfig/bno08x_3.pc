@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/uu_env/uu_ws/devel
+
+Name: bno08x_3
+Description: Description of bno08x_3
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

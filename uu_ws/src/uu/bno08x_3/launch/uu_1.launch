@@ -1,0 +1,15 @@
+<launch>
+	<!--	Load robot description	with base_link and its children -->
+		<include file="$(find imu_rviz_1)/launch/uu_descr.launch" />
+
+	<!--	Run imu		-->
+		<include file="$(find ros_bno08x)/launch/bno08x.launch" />
+		<remap from="/imu/raw" to="/bno08x/raw" />
+
+	<!--	Run ardusimple	-->
+		<include file="$(find ublox_gps)/launch/ublox_zed-f9p.launch" />
+		<remap from="/gps/fix" to="/ublox_gps/fix" />
+
+	<!--	Run dual ekf	-->
+		<include file="$(find imu_rviz_1)/launch/dual_ekf.launch" />
+</launch>

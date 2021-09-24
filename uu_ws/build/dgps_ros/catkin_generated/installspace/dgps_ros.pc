@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/uu_env/uu_ws/install
+
+Name: dgps_ros
+Description: Description of dgps_ros
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

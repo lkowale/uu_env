@@ -1,0 +1,12 @@
+<launch>
+	<!--	Load robot description	with base_link and its children -->
+		<param name="robot_description" textfile="$(find imu_rviz_1)/urdf/uu_1.urdf" />
+		<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+	<!--	Run imu		-->
+		<include file="$(find ros_bno08x)/launch/bno08x.launch" />
+		
+
+	<!--	Run single ekf	-->
+		<include file="$(find bno08x_nogps_4)/launch/single_ekf.launch" />
+</launch>

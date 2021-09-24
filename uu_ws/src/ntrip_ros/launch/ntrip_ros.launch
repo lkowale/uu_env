@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+<node pkg="ntrip_ros" type="ntripclient.py" name="ntrip_client" output="screen">
+    <param name="ntrip_server" value="rtk2go.com:2101" />
+    <param name="ntrip_user" value="username" />
+    <param name="ntrip_pass" value="password" />
+    <param name="ntrip_stream" value="BB-UM-SB" />
+    <param name="nmea_gga" value="$GPGGA,091903.011,5331.222,N,01749.545,E,1,12,1.0,0.0,M,0.0,M,,*65" />
+    <param name="rtcm_topic" value="/gps_rtk/send_rtcm" />
+</node>
+</launch>

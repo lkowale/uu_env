@@ -1,0 +1,15 @@
+<launch>
+	<!--	Load robot description	with base_link and its children -->
+		<param name="robot_description" textfile="$(find rtk_6)/urdf/uu_1.urdf" />
+		<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+	<!--	Run imu		-->
+		<include file="$(find ros_bno08x)/launch/bno08x.launch" />
+
+	<!--	Run ardusimple	-->
+		<include file="$(find ublox_gps)/launch/ublox_zed-f9p.launch" />
+		<remap from="/gps/fix" to="/ublox_gps/fix" />		
+
+	<!--	Run dual ekf	-->
+		<include file="$(find rtk_6)/launch/dual_ekf.launch" />
+</launch>

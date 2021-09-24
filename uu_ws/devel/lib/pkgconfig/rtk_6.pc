@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/uu_env/uu_ws/devel
+
+Name: rtk_6
+Description: Description of rtk_6
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

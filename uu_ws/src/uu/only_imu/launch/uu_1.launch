@@ -1,0 +1,20 @@
+<launch>
+	<!--	Load robot description	with base_link and its children -->
+		<param name="robot_description" textfile="$(find imu_rviz_1)/urdf/uu_1.urdf" />
+		<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+	<!--	Run imu		-->
+		<node type="bno055_ros.py" pkg="bno055" name="bno055_node"/>
+
+	<!--	Run ardusimple	
+		<include file="$(find ublox_gps)/launch/ublox_zed-f9p.launch" />
+		<remap from="/gps/fix" to="/ublox_gps/fix" />
+	-->
+
+	<!--	Run dual ekf	
+		<include file="$(find only_imu)/launch/dual_ekf.launch" />
+	-->
+
+	<!--	Run single ekf	-->
+		<include file="$(find only_imu)/launch/single_ekf.launch" />
+</launch>

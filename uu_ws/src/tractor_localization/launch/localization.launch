@@ -1,0 +1,17 @@
+<launch>
+<!--	Load robot description	with base_link and its children -->
+	<param name="robot_description" textfile="$(find imu_rviz_1)/urdf/uu_1.urdf" />
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+<!--  bno050 IMU Start  -->
+<node type="bno055_ros.py" pkg="bno055" name="bno055_node"/>
+	
+
+
+<!-- EKF Node -->
+
+<node pkg="robot_localization" type="ekf_localization_node" name="ekf_se_odom">
+	<rosparam command="load" file="$(find tractor_localization)/params/localization.yaml" />
+</node>
+	
+</launch>

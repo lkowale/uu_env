@@ -1,0 +1,32 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/ubuntu/uu_env/uu_ws/src/dgps_ros/src/dgps_ros_node.cpp" "/home/ubuntu/uu_env/uu_ws/build/dgps_ros/CMakeFiles/dgps_ros_node.dir/src/dgps_ros_node.cpp.o"
+  "/home/ubuntu/uu_env/uu_ws/src/dgps_ros/src/ntripclient.cpp" "/home/ubuntu/uu_env/uu_ws/build/dgps_ros/CMakeFiles/dgps_ros_node.dir/src/ntripclient.cpp.o"
+  "/home/ubuntu/uu_env/uu_ws/src/dgps_ros/src/serial.cpp" "/home/ubuntu/uu_env/uu_ws/build/dgps_ros/CMakeFiles/dgps_ros_node.dir/src/serial.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "ROSCONSOLE_BACKEND_LOG4CXX"
+  "ROS_BUILD_SHARED_LIBS=1"
+  "ROS_PACKAGE_NAME=\"dgps_ros\""
+  )
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/ubuntu/uu_env/uu_ws/src/dgps_ros/include"
+  "/opt/ros/melodic/include"
+  "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
