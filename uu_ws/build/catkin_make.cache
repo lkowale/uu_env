@@ -1,2 +1,2 @@
-bno055:dgps_ros:ntrip_ros:ros_bno08x:tractor_localization:ublox_f9p/rtcm_msgs:ublox_f9p/ublox:ublox_f9p/ublox_gps:ublox_f9p/ublox_msgs:ublox_f9p/ublox_serialization:uu/bno08x_3:uu/bno08x_nogps_4:uu/dual_ekf_5:uu/imu_rviz_1:uu/only_imu:uu/rtk_6
--DCATKIN_DEVEL_PREFIX=/home/ubuntu/uu_env/uu_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/uu_env/uu_ws/install -G Unix Makefiles
+uu_ros_agogps
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/uu_env/uu_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/uu_env/uu_ws/install -DCATKIN_WHITELIST_PACKAGES=uu_ros_agogps -G Unix Makefiles

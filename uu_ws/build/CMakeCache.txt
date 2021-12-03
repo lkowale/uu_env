@@ -91,7 +91,7 @@ CATKIN_SKIP_TESTING:BOOL=OFF
 CATKIN_SYMLINK_INSTALL:BOOL=OFF
 
 //List of ';' separated packages to build
-CATKIN_WHITELIST_PACKAGES:STRING=
+CATKIN_WHITELIST_PACKAGES:STRING=uu_ros_agogps
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
@@ -463,7 +463,7 @@ imu_tools_BINARY_DIR:STATIC=/home/ubuntu/uu_env/uu_ws/build/imu_tools/imu_tools
 imu_tools_SOURCE_DIR:STATIC=/home/ubuntu/uu_env/uu_ws/src/imu_tools/imu_tools
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/melodic/lib/libdiagnostic_updater.so
+lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for message_generation.
 message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
@@ -581,6 +581,24 @@ ublox_serialization_DIR:PATH=/home/ubuntu/uu_env/uu_ws/devel/share/ublox_seriali
 
 //Value Computed by CMake
 ublox_serialization_SOURCE_DIR:STATIC=/home/ubuntu/uu_env/uu_ws/src/ublox_f9p/ublox_serialization
+
+//Value Computed by CMake
+uu_ctl_1_BINARY_DIR:STATIC=/home/ubuntu/uu_env/uu_ws/build/uu/uu_ctl_1
+
+//Value Computed by CMake
+uu_ctl_1_SOURCE_DIR:STATIC=/home/ubuntu/uu_env/uu_ws/src/uu/uu_ctl_1
+
+//Value Computed by CMake
+uu_ctrl_BINARY_DIR:STATIC=/home/ubuntu/uu_env/uu_ws/build/uu/uu_ctrl
+
+//Value Computed by CMake
+uu_ctrl_SOURCE_DIR:STATIC=/home/ubuntu/uu_env/uu_ws/src/uu/uu_ctrl
+
+//Value Computed by CMake
+uu_ros_agogps_BINARY_DIR:STATIC=/home/ubuntu/uu_env/uu_ws/build/uu_ros_agogps
+
+//Value Computed by CMake
+uu_ros_agogps_SOURCE_DIR:STATIC=/home/ubuntu/uu_env/uu_ws/src/uu_ros_agogps
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/melodic/share/xmlrpcpp/cmake
@@ -729,7 +747,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=20
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

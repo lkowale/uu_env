@@ -5,7 +5,7 @@
 
 	<!--	Run imu		-->
 		<include file="$(find ros_bno08x)/launch/bno08x.launch" />
-
+		<remap from="/imu/data" to="/bno08x/raw" />
 	<!--	Run ardusimple	-->
 		<include file="$(find ublox_gps)/launch/ublox_zed-f9p.launch" />
 		<remap from="/gps/fix" to="/ublox_gps/fix" />		
